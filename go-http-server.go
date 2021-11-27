@@ -6,7 +6,7 @@ import (
 )
 
 func page(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintf(w, "<html><body>Hello World <br>(build from branch <b>\"master\"</b>)</body></html>")
+	fmt.Fprintf(w, "<html><body>Hello World <br>(build from branch <b>\"MASTER\"</b>)</body></html>")
 }
 
 func main() {
