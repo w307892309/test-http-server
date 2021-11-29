@@ -17,7 +17,7 @@ pipeline {
             steps {
                 nexusArtifactUploader{
                     nexusVersion('nexus3')
-                    protocol('http')
+                    protocol("http")
                     nexusUrl('nexus.shakhmin.ru:8081')
                     groupId('bin')
                     version('1')
