@@ -24,9 +24,9 @@ pipeline {
                     repository: 'zip',
                     credentialsId: '7481cfc2-21c5-473c-a509-dd2270d5c954',
                     artifacts: [
-                        artifactId: 'go-http-server',
+                        [artifactId: 'go-http-server',
                         type: 'zip',
-                        file: 'go-http-server.zip'
+                        file: 'go-http-server.zip']
                     ]
                 )
             }
