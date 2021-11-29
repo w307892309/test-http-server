@@ -2,6 +2,9 @@ pipeline {
     agent any
 
     stages {
+        stage('change branch') {
+            echo "$branch"
+        }
         stage('build') {
             steps {
                 sh "PATH=$PATH:/usr/local/go/bin"
