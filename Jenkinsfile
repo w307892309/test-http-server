@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh "PATH=$PATH:/usr/local/go/bin"
                 sh "/usr/local/go/bin/go build go-http-server.go"
             }
         }
