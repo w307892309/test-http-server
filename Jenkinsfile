@@ -26,7 +26,6 @@ pipeline {
                     artifact {
                         artifactId('go-http-server')
                         type('zip')
-                        // classifier('')
                         file('go-http-server.zip')
                     }
                 }
