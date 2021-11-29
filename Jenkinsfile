@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh "PATH=$PATH:/usr/local/go/bin"
-                sh "go build go-http-server.go"
+                sh "/usr/local/go/bin/go build go-http-server.go"
             }
         }
         stage('zip') {
